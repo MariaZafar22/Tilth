@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/></marker>
+    <style>
+      .box{fill:#fff;stroke:#2E7D32;stroke-width:2;rx:12}
+      .core{fill:#2E7D32;stroke:#1B5E20;stroke-width:2;rx:14}
+      .data{fill:#F1F8E9;stroke:#7CB342;stroke-width:2;rx:12}
+      .t{font-size:15px;fill:#1B2A1B;text-anchor:middle;font-weight:600}
+      .s{font-size:12px;fill:#4a5a4a;text-anchor:middle}
+      .w{font-size:16px;fill:#fff;text-anchor:middle;font-weight:700}
+      .ws{font-size:12px;fill:#E8F5E9;text-anchor:middle}
+      .l{stroke:#2E7D32;stroke-width:2;fill:none;marker-end:url(#a)}
+    </style>
+  </defs>
+  <rect width="900" height="460" fill="#FAFAF5"/>
+  <text x="450" y="34" class="t" style="font-size:20px">Tilth architecture</text>
+
+  <rect x="30" y="190" width="130" height="70" class="box"/>
+  <text x="95" y="222" class="t">Farmer</text><text x="95" y="242" class="s">English / Urdu</text>
+
+  <rect x="200" y="190" width="150" height="70" class="box"/>
+  <text x="275" y="222" class="t">Streamlit UI</text><text x="275" y="242" class="s">chat + field profile</text>
+
+  <rect x="390" y="150" width="170" height="150" class="core"/>
+  <text x="475" y="196" class="w">Agent</text>
+  <text x="475" y="220" class="ws">Gemini 2.5 Flash</text>
+  <text x="475" y="240" class="ws">system prompt</text>
+  <text x="475" y="260" class="ws">function calling loop</text>
+
+  <rect x="620" y="70" width="250" height="58" class="box"/>
+  <text x="745" y="94" class="t">search_crop_guides</text><text x="745" y="113" class="s">RAG over crop, soil, pest guides</text>
+  <rect x="620" y="150" width="250" height="58" class="box"/>
+  <text x="745" y="174" class="t">get_weather_forecast</text><text x="745" y="193" class="s">Open-Meteo + spray advisory</text>
+  <rect x="620" y="230" width="250" height="58" class="box"/>
+  <text x="745" y="254" class="t">fertilizer_plan</text><text x="745" y="273" class="s">Urea, DAP, MOP in kg and bags</text>
+  <rect x="620" y="310" width="250" height="58" class="box"/>
+  <text x="745" y="334" class="t">sowing_window</text><text x="745" y="353" class="s">Punjab calendar, open today?</text>
+
+  <rect x="620" y="395" width="250" height="48" class="data"/>
+  <text x="745" y="416" class="t">knowledge_base + embeddings</text><text x="745" y="433" class="s">gemini-embedding-001, cosine search</text>
+
+  <path d="M160 225 H198" class="l"/>
+  <path d="M350 225 H388" class="l"/>
+  <path d="M560 200 C590 200 590 99 618 99" class="l"/>
+  <path d="M560 215 C590 215 590 179 618 179" class="l"/>
+  <path d="M560 235 C590 235 590 259 618 259" class="l"/>
+  <path d="M560 250 C590 250 590 339 618 339" class="l"/>
+  <path d="M745 128 V135 M745 70 V60" stroke="none"/>
+  <path d="M870 99 C890 99 890 419 872 419" class="l" style="stroke-dasharray:5 4"/>
+  <text x="475" y="340" class="s">tool result goes back to the agent,</text>
+  <text x="475" y="358" class="s">which answers or calls another tool</text>
+  <path d="M390 275 C330 330 300 300 280 262" class="l" style="stroke-dasharray:5 4"/>
+  <text x="300" y="330" class="s">answer + agent steps</text>
+</svg>
